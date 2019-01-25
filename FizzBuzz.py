@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
+#For multiples of 3 print Fizz, for multiples of 5
+#print Buzz, and for multiples of both print FizzBuzz
 
-# 
-
-# In[59]:
-
-
-#For multiples of 3 print Fizz, for multiples of 5 print Buzz, and for multiples of both print FizzBuzz
 def fizzbuzz(i):
-    for i in range(1,101):
+    for i in range(1,i+1):
         if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
         elif i % 3 == 0:
@@ -17,5 +11,5 @@ def fizzbuzz(i):
             print("Buzz")
         else:
             print(i)
-print(fizzbuzz(i))
 
+fizzbuzz(100)
